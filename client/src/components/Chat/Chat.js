@@ -6,7 +6,7 @@ import Messages from '../Messages/Messages';
 import TextContainer from '../TextContainer/TextContainer';
 import queryString from 'query-string';
 import io from 'socket.io-client';
-let socket=io.connect('http://localhost:5000');
+let socket=io.connect('https://discuss-chat-app.vercel.app/');
 // let socket;
 //location comes from react router and it gives us a prop called location
 const Chat=({location})=> {
@@ -15,7 +15,7 @@ const Chat=({location})=> {
     const [message,setMessage]=useState('');
     const [messages,setMessages]=useState([]);
     const [users, setUsers] = useState('');
-    const ENDPOINT = 'localhost:5000';
+    const ENDPOINT = 'https://discuss-chat-app.vercel.app/';
     useEffect(()=> {
 
         const {name,room}=queryString.parse(location.search);
