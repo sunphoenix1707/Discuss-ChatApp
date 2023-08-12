@@ -9,10 +9,9 @@ const router=require('./router');
 app.use(router);
 const server=http.createServer(app);
 const io=new Server(server, {
-    cors: {
-        origin: ["https://deploy-mern-1whq.vercel.app"],
+     cors: {
+        origin: 'http://localhost:3000',
         methods: ['GET','POST'],
-          credentials: true;
     },
 });
 // io.on('connection',(socket)=> {
