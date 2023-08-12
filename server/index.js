@@ -10,7 +10,7 @@ app.use(router);
 const server=http.createServer(app);
 const io=new Server(server, {
      cors: {
-        origin: ['https://discuss-chat-app.vercel.app/'],
+        origin: ['https://discuss-chat-app-5t8z.vercel.app/'],
         methods: ['GET','POST'],
           credentials: true
     },
