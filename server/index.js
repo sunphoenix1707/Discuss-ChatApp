@@ -10,9 +10,8 @@ app.use(router);
 const server=http.createServer(app);
 const io=new Server(server, {
      cors: {
-        origin: 'https://discuss-chat-app-sunpreet-5t8z.vercel.app/',
+        origin: 'http://localhost:5000',
         methods: ['GET','POST'],
-          credentials: true
     },
 });
 // io.on('connection',(socket)=> {
