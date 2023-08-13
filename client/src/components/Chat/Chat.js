@@ -6,7 +6,7 @@ import Messages from '../Messages/Messages';
 import TextContainer from '../TextContainer/TextContainer';
 import queryString from 'query-string';
 import io from 'socket.io-client';
-let socket=io.connect(''http://localhost:5000'');
+let socket=io.connect('http://localhost:5000');
 // let socket;
 //location comes from react router and it gives us a prop called location
 const Chat=({location})=> {
